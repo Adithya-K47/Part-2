@@ -251,8 +251,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1251.8138, y: -82.99701}
-  m_SizeDelta: {x: 126.8943, y: 77.406}
+  m_AnchoredPosition: {x: -655.11, y: -25}
+  m_SizeDelta: {x: 105.1066, y: 50.001}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &219972005
 MonoBehaviour:
@@ -741,6 +741,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 79874369640574647, guid: 1a804a99038e5064da51afd4fbf57bb1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 127.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 79874369640574647, guid: 1a804a99038e5064da51afd4fbf57bb1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 50.003
+      objectReference: {fileID: 0}
+    - target: {fileID: 79874369640574647, guid: 1a804a99038e5064da51afd4fbf57bb1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -187.1395
+      objectReference: {fileID: 0}
+    - target: {fileID: 79874369640574647, guid: 1a804a99038e5064da51afd4fbf57bb1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 144.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1396041343404556523, guid: 1a804a99038e5064da51afd4fbf57bb1, type: 3}
       propertyPath: m_Name
       value: Canvas
