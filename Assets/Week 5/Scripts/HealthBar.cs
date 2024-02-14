@@ -6,9 +6,10 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     public Slider slider;
+    public Knight knight;
 
     public void TakeDamage(float damage)
     {
-        slider.value -= damage;
+        slider.value = healt
     }
 }
