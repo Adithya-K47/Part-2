@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,8 +9,14 @@ public class HealthBar : MonoBehaviour
     public Slider slider;
     public Knight knight;
 
-    public void TakeDamage(float damage)
+    public void Start()
     {
-        slider.value = healt
+        knight = GetComponent<Knight>();
     }
+
+    public void Update()
+    {
+        slider.value = knight.health;
+    }
+   
 }

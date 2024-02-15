@@ -251,7 +251,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -776, y: -24.999}
+  m_AnchoredPosition: {x: -850, y: -24.999}
   m_SizeDelta: {x: 105.1066, y: 50.001}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &219972005
@@ -1086,11 +1086,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 79874369640574647, guid: 1a804a99038e5064da51afd4fbf57bb1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -218
+      value: -502
       objectReference: {fileID: 0}
     - target: {fileID: 79874369640574647, guid: 1a804a99038e5064da51afd4fbf57bb1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 189
+      value: 328
       objectReference: {fileID: 0}
     - target: {fileID: 1396041343404556523, guid: 1a804a99038e5064da51afd4fbf57bb1, type: 3}
       propertyPath: m_Name
@@ -1752,6 +1752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 2027988873}
+  knight: {fileID: 0}
 --- !u!1 &7474701553806284229
 GameObject:
   m_ObjectHideFlags: 0
