@@ -16,18 +16,15 @@ public class Ghost : MonoBehaviour
     float maxHP = 5;
     public bool isDown;
     public HealthBar hb;
+    
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         isDown = false;
-        if (hp <= 0)
-        {
-            isDown = true;
-            animator.SetTrigger("Death");
-        }
+        hp = maxHP;
+        
     }
-
     private void FixedUpdate()
     {
         if (isDown) return;
@@ -47,12 +44,24 @@ public class Ghost : MonoBehaviour
         {
             dest = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
-
-        if (Input.GetMouseButtonDown(1))
-        {
-            animator.SetTrigger("Attack");
-        }
         animator.SetFloat("Movement", mov.magnitude);
-        gameObject.SendMessage("HealthBarvalue", hp, SendMessageOptions.DontRequireReceiver);
+        gameObject.SendMessage("HBval", hp, SendMessageOptions.DontRequireReceiver);
+    }
+
+
+    public void TakeDamage(float damage)
+    {
+        hp -= damage;
+        hp = Mathf.Clamp(hp, 0, maxHP);
+        if (hp <= 0)
+        {
+            isDown = true;
+            animator.SetTrigger("Death");
+        }
+        else
+        {
+            isDown = false;
+            animator.SetTrigger("TakeDamage");
+        }
     }
 }
