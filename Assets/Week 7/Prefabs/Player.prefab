@@ -100,8 +100,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 348b4456fe84bbb4192ffd0c2280b669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedColor: {r: 1, g: 0, b: 0, a: 0}
-  unselectedColor: {r: 0.6037736, g: 0, b: 0, a: 0}
+  selectedColor: {r: 1, g: 0, b: 0, a: 1}
+  unselectedColor: {r: 0.4339623, g: 0, b: 0, a: 1}
+  speed: 100
 --- !u!58 &6323982073397188365
 CircleCollider2D:
   m_ObjectHideFlags: 0
