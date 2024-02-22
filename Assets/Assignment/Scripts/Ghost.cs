@@ -26,6 +26,8 @@ public class Ghost : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        if (Down) return;
+        
         mov = dest - (Vector2)transform.position;
         if (mov.magnitude < 0.1)
         {
@@ -37,6 +39,7 @@ public class Ghost : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Down) return;
         if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
         {
             dest = Camera.main.ScreenToWorldPoint(Input.mousePosition);
