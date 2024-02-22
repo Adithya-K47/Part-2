@@ -64,4 +64,15 @@ public class Ghost : MonoBehaviour
             animator.SetTrigger("TakeDamage");
         }
     }
+
+    public void Respawn()
+    {
+        if(Down == true)
+        {
+            hp = 5;
+            Down = false;
+            animator.SetTrigger("TakeDamage");
+        }
+        
+    }
 }
