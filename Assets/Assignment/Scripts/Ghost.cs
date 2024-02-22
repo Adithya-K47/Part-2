@@ -37,7 +37,7 @@ public class Ghost : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
         {
             dest = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
